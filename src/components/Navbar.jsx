@@ -10,13 +10,13 @@ const Navbar = () => {
           {/* Logo */}
           <a
             href="#"
-            className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-500"
+            className="text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-500"
           >
-            Portfolio
+            My Portfolio
           </a>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex space-x-8">
+          <div className="hidden md:flex space-x-9">
             <a
               href="#about"
               className="text-white hover:text-purple-400 transition-colors duration-300"
