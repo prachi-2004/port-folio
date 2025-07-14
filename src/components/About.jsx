@@ -40,7 +40,7 @@ const About = () => {
           <div className="w-full lg:w-1/3">
             <div className="relative rounded-lg overflow-hidden shadow-xl transform transition-transform hover:scale-105 duration-300">
               <img
-                src="public/image1.png"
+                src="../../public/image1.png"
                 alt="web developer"
                 className="w-full h-auto object-cover"
               />
