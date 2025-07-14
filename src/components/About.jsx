@@ -40,8 +40,8 @@ const About = () => {
           <div className="w-full lg:w-1/3">
             <div className="relative rounded-lg overflow-hidden shadow-xl transform transition-transform hover:scale-105 duration-300">
               <img
-                src="src/assets/profile.png"
-                alt="Your Name"
+                src="src/assets/image1.png"
+                alt="web developer"
                 className="w-full h-auto object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent opacity-60"></div>
@@ -54,14 +54,12 @@ const About = () => {
               About Me
             </h2>
             <p className="text-lg text-gray-300 mb-6">
-              I'm a passionate full-stack developer and UI/UX designer who loves building modern, responsive, and user-centric web applications.
+              I'm a passionate full-stack developer who specializes in building modern, responsive web applications with clean code, seamless performance, and a strong focus on user experience and scalability
             </p>
             <p className="text-lg text-gray-300 mb-6">
-              With over 5 years of experience in frontend and backend development, I specialize in creating high-performance websites and scalable applications using technologies like React, Node.js, Tailwind CSS, and more.
-            </p>
+I specialize in building high-performance websites and scalable web applications using modern technologies like React, Node.js, Tailwind CSS, and more — combining clean code with strong design principles and responsiveness.            </p>
             <p className="text-lg text-gray-300 mb-8">
-              Whether you're looking to build a personal portfolio, a business website, or a complex web application, I'm here to bring your vision to life.
-            </p>
+Whether it's a personal portfolio, a business website, or a complex web application, I’m dedicated to turning your ideas into powerful, user-friendly digital experiences.            </p>
 
             <a
               href="#contact"

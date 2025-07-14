@@ -12,7 +12,7 @@ const projects = [
     title: "Portfolio Website",
     description: "A personal portfolio showcasing work samples, skills, and contact information. Built using React, Tailwind CSS, and Framer Motion for animations.",
     image: "https://picsum.photos/id/1025/800/600 ",
-    tags: ["React", "Tailwind CSS", "Framer Motion"],
+    tags: ["React", "Tailwind CSS"],
     link: "#"
   },
   {

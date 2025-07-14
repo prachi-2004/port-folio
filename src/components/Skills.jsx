@@ -5,11 +5,10 @@ const skills = [
     category: "Frontend",
     items: [
       { name: "HTML5", level: 95 },
-      { name: "CSS3 / SCSS", level: 90 },
-      { name: "JavaScript", level: 85 },
+      { name: "CSS", level: 95},
+      { name: "JavaScript", level: 90 },
       { name: "React", level: 90 },
-      { name: "TypeScript", level: 80 },
-      { name: "Tailwind CSS", level: 90 }
+      { name: "Tailwind CSS", level: 80 }
     ]
   },
   {
@@ -18,7 +17,6 @@ const skills = [
       { name: "Node.js", level: 80 },
       { name: "Express.js", level: 75 },
       { name: "Python", level: 70 },
-      { name: "Django", level: 65 },
       { name: "REST APIs", level: 85 }
     ]
   },
@@ -38,7 +36,6 @@ const skills = [
       { name: "Problem Solving", level: 80 },
       { name: "UI/UX Design", level: 75 },
       { name: "Responsive Design", level: 90 },
-      { name: "Agile Methodology", level: 80 }
     ]
   }
 ];
