@@ -72,7 +72,7 @@ const Hero = () => {
               View My Work
             </a>
             <a
-              href="/public/NSUT_resume f.pdf" /* Replace with your actual resume file or URL */
+              href="public/NSUT_TnPResume.pdf" /* Replace with your actual resume file or URL */
               download
               className="px-6 py-3 border border-gray-400 text-gray-300 font-semibold rounded-lg hover:bg-gray-700 hover:border-gray-300 transition-colors duration-300 flex items-center space-x-2"
             >
