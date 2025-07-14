@@ -1,11 +1,10 @@
-#root {
+* {
   margin: 0;
-  padding: 2rem;
-  text-align: center;
+  padding: 0;
+  box-sizing: border-box; /* Add this to ensure proper box model */
 }
-body, html {
-  overflow-x: hidden;
-}
+
+
 .logo {
   height: 6em;
   padding: 1.5em;
