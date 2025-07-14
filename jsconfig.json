@@ -1,0 +1,7 @@
+{
+  "compilerOptions": {
+    "baseUrl": "portfolio/src",
+    "jsx": "react"
+  },
+  "include": ["portfolio/src", "index.js"]
+}
