@@ -2,25 +2,20 @@ import { useEffect, useState } from 'react';
 
 const projects = [
   {
-    title: "E-Commerce Store",
-    description: "A fully responsive online store built with React, Redux, and Firebase. Includes cart functionality, user authentication, and product search.",
-    image: "https://picsum.photos/id/1074/800/600 ",
-    tags: ["React", "Redux", "Firebase", "Tailwind CSS"],
-    link: "#"
+    title: "PathPilot",
+    description: "An AI-driven career recommendation platform that leverages intelligent quiz analysis, skill gap detection, and dynamic roadmaps to guide users toward optimal career paths.",
+    image: "/image.png",
+    tags: ["React", "JavaScript", "Node.js", "Tailwind CSS", "Mongo DB"],
+    liveLink: "https://path-pilot-six.vercel.app ",
+    githubLink: "https://github.com/prachi-2004/PathPilot " // Replace with actual GitHub link
   },
   {
     title: "Portfolio Website",
-    description: "A personal portfolio showcasing work samples, skills, and contact information. Built using React, Tailwind CSS, and Framer Motion for animations.",
-    image: "https://picsum.photos/id/1025/800/600 ",
+    description: "A personal portfolio showcasing work samples, skills, and contact information. Built using React, Tailwind CSS, and animations for a smooth user experience.",
+    image: "/image copy.png",
     tags: ["React", "Tailwind CSS"],
-    link: "#"
-  },
-  {
-    title: "Task Management App",
-    description: "A productivity tool to manage daily tasks and set reminders. Uses local storage and supports dark mode. Built with vanilla JavaScript and CSS.",
-    image: "https://picsum.photos/id/1012/800/600 ",
-    tags: ["HTML", "CSS", "JavaScript"],
-    link: "#"
+    liveLink: "https://port-folio-nine-delta.vercel.app/ ",
+    githubLink: "https://github.com/prachi-2004/port-folio" // Replace with actual GitHub link
   }
 ];
 
@@ -63,7 +58,7 @@ const Projects = () => {
           Here are some of the web applications and websites I've built recently.
         </p>
 
-        <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-2">
           {projects.map((project, index) => (
             <div
               key={index}
@@ -87,12 +82,24 @@ const Projects = () => {
                     </span>
                   ))}
                 </div>
-                <a
-                  href={project.link}
-                  className="inline-block text-purple-400 hover:text-purple-300 font-medium transition-colors"
-                >
-                  View Project →
-                </a>
+                <div className="flex space-x-4 mt-4">
+                  <a
+                    href={project.liveLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block text-purple-400 hover:text-purple-300 font-medium transition-colors"
+                  >
+                    Live Demo →
+                  </a>
+                  <a
+                    href={project.githubLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block text-purple-400 hover:text-purple-300 font-medium transition-colors"
+                  >
+                    GitHub Repo →
+                  </a>
+                </div>
               </div>
             </div>
           ))}

@@ -27,9 +27,12 @@ const Hero = () => {
       className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white overflow-hidden"
     >
       {/* Spotlight */}
-      <div className="pointer-events-none absolute rounded-full w-64 h-64 bg-purple-500 opacity-20 blur-3xl transition-transform duration-300 ease-out" style={{
-        transform: `translate(var(--x), var(--y)) translate(-50%, -50%) scale(1)`
-      }}></div>
+      <div
+        className="pointer-events-none absolute rounded-full w-64 h-64 bg-purple-500 opacity-20 blur-3xl transition-transform duration-300 ease-out"
+        style={{
+          transform: `translate(var(--x), var(--y)) translate(-50%, -50%) scale(1)`
+        }}
+      ></div>
 
       {/* Background decoration blobs */}
       <div className="absolute inset-0 z-0">
@@ -40,35 +43,53 @@ const Hero = () => {
 
       {/* Content */}
       <div
-        className={`max-w-4xl mx-auto text-center px-6 z-10 transition-opacity duration-1000 ease-out ${
-          isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
-        }`}
+        className={`container mx-auto px-6 md:px-12 grid md:grid-cols-2 gap-12 items-center`}
       >
-        <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight mb-6 bg-clip-text text-transparent bg-gradient-to-r from-purple-400 via-pink-500 to-blue-500">
-          Hello, I'm Prachi
-          <br />
-          <span className="block mt-2">Creative Developer & Coder</span>
-        </h1>
-        <p className="text-lg sm:text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-          Building stunning, responsive, and user-friendly websites and applications that make an impact.
-        </p>
-        <div className="flex justify-center space-x-4">
-          <a
-            href="#projects"
-            className="px-6 py-3 bg-gradient-to-r from-purple-500 to-pink-500 text-white font-semibold rounded-lg shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300"
-          >
-            View My Work
-          </a>
-          <a
-            href="#contact"
-            className="px-6 py-3 border border-gray-400 text-gray-300 font-semibold rounded-lg hover:bg-gray-700 hover:border-gray-300 transition-colors duration-300 flex items-center space-x-2"
-          >
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-              <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
-              <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
-            </svg>
-            <span>Contact Me</span>
-          </a>
+        {/* Text Content */}
+        <div
+          className={`max-w-xl mx-auto text-left z-10 transition-opacity duration-1000 ease-out ${
+            isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+          }`}
+        >
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight mb-6 bg-clip-text text-transparent bg-gradient-to-r from-purple-400 via-pink-500 to-blue-500">
+            Hello, I'm Prachi
+            <br />
+          </h1>
+          <h2 className="text-4xl sm:text-5xl md:text-4xl font-extrabold leading-tight mb-6 bg-clip-text text-transparent bg-gradient-to-r from-purple-400 via-pink-500 to-blue-500">Creative Developer & Coder</h2>
+          <p className="text-lg sm:text-xl text-gray-300 mb-8 max-w-xl">
+            Building stunning, responsive, and user-friendly websites and applications that make an impact.
+          </p>
+          <div className="flex flex-wrap gap-4">
+            <a
+              href="#projects"
+              className="px-6 py-3 bg-gradient-to-r from-purple-500 to-pink-500 text-white font-semibold rounded-lg shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300"
+            >
+              View My Work
+            </a>
+            <a
+              href="/public/NSUT_resume f.pdf" /* Replace with your actual resume file or URL */
+              download
+              className="px-6 py-3 border border-gray-400 text-gray-300 font-semibold rounded-lg hover:bg-gray-700 hover:border-gray-300 transition-colors duration-300 flex items-center space-x-2"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                <path fillRule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L10 11.586l2.293-2.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clipRule="evenodd" />
+              </svg>
+              <span>Download Resume</span>
+            </a>
+          </div>
+        </div>
+
+        {/* Giphy Section */}
+        <div
+          className={`flex justify-center md:justify-end z-10 ${
+            isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+          } transition-opacity duration-1000 delay-300 ease-out`}
+        >
+          <img
+            src="codee.webp" // Replace this with your Giphy embed link
+            alt="Coding Animation"
+            className="w-40 h-auto md:w-80 lg:w-100 rounded-lg shadow-xl transform hover:scale-105 transition-transform duration-300"
+          />
         </div>
       </div>
 
